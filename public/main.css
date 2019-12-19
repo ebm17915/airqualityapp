@@ -1,0 +1,196 @@
+ /* CSS files add styling rules to your content */
+ body, h1, h2, h3, p{
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    }
+    
+    body {
+      margin: 2em;
+      padding: 0;
+      margin: 0;
+      background: #f2f6e9;
+    }
+    
+    body, html{
+      background: #66CC99;
+      background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) ), url(https://cdn.glitch.com/f0f958e3-68de-4110-8b1e-d903c25ce76c%2Fwallhaven-39o8k9.jpg?v=1575597157082) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+    }
+    
+    h1 {
+      font-style: bold;
+      color: black;
+      text-align: center;
+      
+    }
+    
+    h2{
+      font-size: 40px;
+      color: black;
+      text-align: center;
+    }
+    
+    h3{
+      font-size: 30px;
+      color: black;
+    }
+    
+    p{
+      color: black;
+        border-style: none;
+      border-width: 5px;
+      padding: 30px;
+      margin: 0 auto;
+      width: 50%;
+    
+    }
+    
+    
+    .footer{
+      text-align: center;
+      font-size: 15px;
+      padding: 0;
+    }
+    
+    .picborder{
+      height: auto;
+      max-width: 100%;
+      margin: 50px 0px 50px 0px;
+    }
+    .title{
+      font-size: 50px;
+      text-shadow: 0px 0 grey, 0 3px grey, 3px 0 grey, 0 0px grey;
+    }
+    
+    .center{
+      text-align: center;
+    }
+    
+    .names{
+      font-size: 25px;
+    }
+    
+    /* image settings */
+    
+    .imgleft{
+      float: left;
+    }
+    
+    .imgright{
+      float: right;
+      
+    }
+    
+    .imgcenter{
+      
+    }
+    
+    .picborder{
+      .entry-content img { border: white 4px solid; }
+    }
+    
+    .cirle {
+      border-radius: 50%;
+    }
+    
+    .justify{
+      text-align: justify;
+    }
+    
+    
+    
+    /* buttons */
+    
+    .clickhere button {
+      border:1px solid black;
+      background:#282828;
+      border-radius: 0;
+      color: white;
+      margin: 50px 0 420px 0;
+    }
+    .clickhere button:hover {
+      border:1px solid #fff;
+      background: grey;
+      color: white;
+    }
+    
+    /*--- navigation bar ---*/
+    .navbar {
+      background: transparent;
+      position: absolute;
+      z-index: 1;
+      
+    }
+    .nav-link,
+    .navbar-brand {
+      color: black;
+      cursor: pointer;
+    }
+    .nav-link {
+      margin-right: 1em !important;
+    }
+    .nav-link:hover {
+      color: blue;
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+    
+    
+    /*descriptions*/
+    
+    .description {
+      left: 50%;
+      position: absolute;
+      top: 45%;
+      transform: translate(-50%, -55%);
+      text-align: center;
+    }
+    .description h1 {
+      color: #fff;
+      
+    }
+    .description p {
+      color: #fff;
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+    
+    
+    /*Media Queries*/
+    
+    @media (max-width: 575.98px) {
+      .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+      }
+      
+      .description h1 {
+        font-size: 2em;
+      }
+      
+      .description p {
+        font-size: 1.2rem;
+      }
+      
+      .features {
+        margin: 0;
+      }
+    }
+    
+    /* Team Section */
+    .container-fluid{
+      margin-bottom: 50px;
+      text-align: center;
+    }
