@@ -9,8 +9,8 @@ function weather() {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
   
-      location.innerHTML =
-        "Latitude is " + latitude + "° Longitude is " + longitude + "°";
+    /*   location.innerHTML =
+        "Latitude is " + latitude + "° Longitude is " + longitude + "°";*/
   
       $.getJSON(
         url + apiKey + "/" + latitude + "," + longitude + "?callback=?",
@@ -24,9 +24,12 @@ function weather() {
     function error() {
       location.innerHTML = "Unable to retrieve your location";
     }
-  
-    location.innerHTML = "Locating...";
+  /*
+    location.innerHTML = "Locating..."; */
   }
   
   weather();
   
+function icon() {
+  
+}
