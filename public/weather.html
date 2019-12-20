@@ -67,14 +67,14 @@
     <!-- Code for Weather Script Display -->
    
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
+  <!--  <script>
         $(document).on("keypress", "input", function(e){
             if(e.which == 13){
                 var inputVal = $(this).val();
                 alert("You've entered: " + inputVal);
             }
         });
-    </script>
+    </script> -->
     <div class="wrapper">
       <div class="search_box">
           <input type="text"  id="userInput" placeholder="Search location...">
@@ -115,7 +115,14 @@
   
   <div  id='my-container'></div>  
 <script  type="text/javascript"  charset="utf-8">  
+ $(document).on("keypress", "input", function(e){
+            if(e.which == 13){
+                var inputVal = $(this).val();
+                alert("You've entered: " + inputVal);
+            }
+        });
 _aqiFeed({  
+  
   city:"losangeles/reseda", 
   callback:function(aqi){  
   $("#my-container").html(aqi.details);  
